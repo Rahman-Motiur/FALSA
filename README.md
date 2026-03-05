@@ -8,7 +8,9 @@ Official implementation of the paper:
 Md Motiur Rahman, Smriti Bhatt, Miad Faezipour  
 Purdue University
 
-📄 Paper: (link will be added after publication)
+> **Status:**  
+> The paper and source code for **FALSA** will be released soon.  
+> Please stay tuned for updates.
 
 ---
 
@@ -48,26 +50,16 @@ This allows FALSA to improve fairness without sacrificing segmentation performan
 
 # Framework Architecture
 
-The FALSA pipeline integrates fairness modules into a vision-language segmentation architecture.
+The proposed FALSA framework integrates fairness-aware modules into a vision-language segmentation pipeline.
 
-```
-Image Encoder (SAM / SAMed)
-        │
-        ▼
-Demographic-Invariant Contrastive Learning (DICL)
-        │
-        ▼
-Adaptive Fairness Calibration (AFC)
-        │
-        ▼
-Mask Decoder
-        │
-        ▼
-Segmentation Prediction
-        │
-        ▼
-UniFairLoss Optimization
-```
+<p align="center">
+  <img src="figures/FALSA.png" width="900">
+</p>
+
+The modules marked with **+** correspond to the fairness components introduced in this work:
+- **DICL**: Demographic-Invariant Contrastive Learning  
+- **AFC**: Adaptive Fairness Calibration  
+- **UniFairLoss**: Unified Cross-Attribute Fairness Loss
 
 ---
 
@@ -210,7 +202,7 @@ If you use this work, please cite:
 @article{rahman2026falsa,
   title={FALSA: Fairness-Aware Latent Space Alignment in Vision-Language Models for Medical Image Segmentation},
   author={Rahman, Md Motiur and Bhatt, Smriti and Faezipour, Miad},
-  journal={International Journal of Computer Vision},
+  journal={Submitted},
   year={2026}
 }
 ```
